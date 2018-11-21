@@ -76,6 +76,20 @@
 					  </div>
 					</li>
 					<li>
+    				  <div class="item-content" align = "center">
+    					  <div class="item-inner">
+    						  <div class="item-title label">Agendar Cita</div>
+    						  <div class="item-input">
+    							  <label class="label-switch">
+    								  <input type="checkbox" id="chkAgendarCita">
+    								  <div class="checkbox"></div>
+    							  </label>
+    						  </div>
+    					  </div>
+    				  </div>
+					 </li>
+					 
+					<li style="display:none;" class = 'liFecha'>
 					  <div class="item-content">
 						<div class="item-media">
 							<i class="material-icons">date_range</i>
@@ -87,7 +101,7 @@
 						</div>
 					  </div>
 					</li>
-					<li>
+					<li style="display:none;" class = 'liHora'>
 					  <div class="item-content">
 						<div class="item-media">
 							<i class="material-icons">alarm</i>
@@ -102,6 +116,43 @@
 					<div class="block block-strong no-padding no-margin margin-bottom">
 					  <div id="demo-picker-date-container"></div>
 					</div>
+					<li>
+					  <div class="item-content">
+						<div class="item-media">
+							<i class="material-icons">dehaze</i>
+					    </div>
+						<div class="item-inner">
+						  <div class="item-input">
+							<textarea type="text" placeholder="Observacion" id="txtObservacion"></textarea>
+						  </div>
+						</div>
+					  </div>
+					</li>
+					<li style="display:none;" class = 'liEstado'>
+					  <div class="item-content">
+						<div class="item-media">
+							<i class="material-icons">compare_arrows</i>
+					    </div>
+						<div class="item-inner">
+						  <div class="item-input">
+							<input type="text" placeholder="Estado" id="txtEstado">
+						  </div>
+						</div>
+					  </div>
+					</li>
+					
+                    <li style="display:none;" class = 'liObservacionAdmin'>
+					  <div class="item-content">
+						<div class="item-media">
+							<i class="material-icons">dehaze</i>
+					    </div>
+						<div class="item-inner">
+						  <div class="item-input">
+							<textarea type="text" placeholder="Observacion" id="txtObservacionAdmin"></textarea>
+						  </div>
+						</div>
+					  </div>
+					</li>
 				  </ul>
 				  <p><a href="#" class="button button-big button-fill color-green" id="btnModificarProspecto" style="display:none;">Guardar Cambios</a></p>
 				  <p><a href="#" class="button button-big button-fill color-green" id="btnGuardarProspecto" style="display:none;">Guardar</a></p>

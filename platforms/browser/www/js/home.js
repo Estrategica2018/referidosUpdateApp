@@ -6,7 +6,7 @@
 
 // Prospectos Page
 function cargarProspectos(id_usuario) {
-	$.post('http://www.estrategicacomunicaciones.com/mobile/php/consult.prospect.php', {
+	$.post('https://www.estrategicacomunicaciones.com/mobile/php/consult.prospect.php', {
 		'id_usuario' : id_usuario
 	}, function(resp) {
 		if (resp.state == 'true') {
@@ -19,7 +19,10 @@ function cargarProspectos(id_usuario) {
 				parameters += 'telefono=' + item.telefono + '&';
 				parameters += 'oportunidad=' + item.oportunidad + '&';
 				parameters += 'fecha_cita=' + item.fecha_cita + '&';
-				parameters += 'hora_cita=' + item.hora_cita;
+				parameters += 'hora_cita=' + item.hora_cita +'&';
+				parameters += 'observacionProspecto=' + item.observacionProspecto+'&';
+				parameters += 'observacionTrazabilidad=' + item.observacionTrazabilidad+'&';
+				parameters += 'nombre_estado=' + item.nombre;
 				var li = '<li>';
 				li += '<a href="register.prospect.html?' + parameters + '" class="item-link">';
 				li += '<div class="item-content">';
@@ -39,7 +42,7 @@ function cargarProspectos(id_usuario) {
 $('#btnGuardarUsuario').on('click', function () {
 	if ($('#txtNombre').val() != '' && $('#txtApellido').val() != '' && $('#txtIdentificacion').val() != '' && $('#txtEmail').val() != '' && $('#txtTelefono').val() != '' && $('#cmbGenero').val() != '') {
 		if ($('#txtPassword').val() == $('#txtPassword2').val()) {
-			$.post('http://www.estrategicacomunicaciones.com/mobile/php/register.user.php', {
+			$.post('https://www.estrategicacomunicaciones.com/mobile/php/register.user.php', {
 				'nombres' : $('#txtNombre').val(),
 				'apellidos' : $('#txtApellido').val(),
 				'identificacion' : $('#txtIdentificacion').val(),
