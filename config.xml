@@ -39,12 +39,12 @@
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/36-36.png" />
         <icon density="mdpi" src="www/res/icon/android/48-48.png" />
-        <!--
+        
         <icon density="hdpi" src="www/res/icon/android/72*72.png" />
         <icon density="xhdpi" src="www/res/icon/android/96-96.png" />
         <icon density="xxhdpi" src="www/res/icon/android/144-144.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/192-192.png" />
-    -->
+    
         <!--
         <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
         <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
