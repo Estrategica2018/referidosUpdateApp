@@ -68,4 +68,37 @@ $('#btnIngresar').on('click', function () {
 		myApp.alert('Ingrese su usuario y contrase');
 	}
 });
+$('#btnSalir').on('click', function () {
+	deleteCookie('id_usuario');
+	$('#txtUsuario, #txtContrasena').val('');
+	$('.divLogin').show();
+	$('.divRegister, #tb3').hide();
+});
+
+
+$('#btnRegistrar').on('click', function () {
+	$('.divLogin').hide();
+	$('.divRegister').show();	
+	$('#chkModificar').prop('checked', true);
+	$('#btnSalir').html('Cancelar');
+	$('#divGuardarUsuario').show();
+	$('#txtNombre, #txtApellido, #txtIdentificacion, #txtEmail, #txtPassword, #txtPassword2, #txtTelefono').prop('disabled', false).val('');
+	$('#cmbGenero').prop('disabled', false).val('M');
+});  
+
+$('#lnkEnterate').on('click', function () {
+	myApp.showTab('#view-5');
+});
+
+$('#lnkPortafolio').on('click', function () {
+	myApp.showTab('#view-1');
+});
+
+$('#lnkProyectos').on('click', function () {
+	myApp.showTab('#view-2');
+});
+
+$('#lnkTerCond').on('click', function () {
+	myApp.showTab('#view-5');
+});
 		
